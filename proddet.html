@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Product Detail - Christian Wijaya</title>
+  <link rel="stylesheet" href="proddet.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="brand">Christian Wijaya</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="What are you looking for?">
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Product.html">PRODUCT</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Event.html">EVENT</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main class="container">
+    <section class="product-detail">
+      <div class="gallery">
+        <img src="assets/blv1.png" alt="Luxury Watch" class="main-image">
+        <div class="thumbnails">
+          <img src="assets/blv2.png" alt="Thumbnail 1">
+          <img src="assets/blv.png" alt="Thumbnail 2">
+          <img src="assets/blvv.png" alt="Thumbnail 3">
+        </div>
+      </div>
+
+      <div class="info">
+        <h2>POLO BLV Limited</h2>
+        <div class="rating">★★★★☆ <span>(24 reviews)</span></div>
+        <p class="price">$499</p>
+        <p class="desc">This luxury timepiece blends heritage craftsmanship with modern elegance. Designed for timeless prestige.</p>
+
+        <div class="size-options">
+          <h3>Size:</h3>
+          <div class="size-buttons">
+            <button class="size-btn active">Small</button>
+            <button class="size-btn">Medium</button>
+            <button class="size-btn">Large</button>
+          </div>
+        </div>
+
+        <div class="color-options">
+          <h3>Color:</h3>
+          <div class="color-selector">
+            <div class="color-option brown"></div>
+            <div class="color-option white active"></div>
+            <div class="color-option black"></div>
+          </div>
+        </div>
+
+        <div class="quantity-selector">
+          <h3>Quantity:</h3>
+          <div class="qty-input">
+            <button class="qty-btn decrement">-</button>
+            <input type="number" value="1" min="1" class="qty-value">
+            <button class="qty-btn increment">+</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn add-cart">Add to Cart</button>
+          <!-- <button class="btn buy-now">Buy Now</button> -->
+          <!-- <a href="product.html" class="btn buy-now">Buy Now</a> -->
+          <button class="btn buy-now" onclick="window.location.href='product.html'">Buy Now</button>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="proddet.js"></script>
+</body>
+</html>

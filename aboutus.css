@@ -1,0 +1,303 @@
+:root {
+  --gold: #d4af37;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #f5f5f5;
+  --dark-gray: #333333;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #004d40;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  margin-right: 40px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin-right: 40px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--gray);
+  transition: all 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-links a.active {
+  color: var(--gold);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.about-hero {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  border-radius: 8px;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: var(--white);
+  padding: 0 20px;
+}
+
+.hero-overlay h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero-overlay p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.brand-story, .headquarters {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.story-content, .hq-content {
+  flex: 1;
+}
+
+.story-image, .hq-image {
+  flex: 1;
+}
+
+.story-image img, .hq-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.gold-divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--gold);
+  margin: 20px 0 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+}
+
+.philosophy {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.philosophy-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.philosophy-card {
+  flex: 1;
+  max-width: 300px;
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 40px;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.philosophy-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.location-list {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.location h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 60px 0 30px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-links h4, .footer-contact h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 992px) {
+  .brand-story, .headquarters {
+    flex-direction: column;
+  }
+  
+  .philosophy-grid {
+    flex-wrap: wrap;
+  }
+  
+  .footer-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 400px;
+  }
+  
+  .hero-overlay h2 {
+    font-size: 36px;
+  }
+  
+  .hero-overlay p {
+    font-size: 18px;
+  }
+  
+  .philosophy-card {
+    max-width: 100%;
+  }
+}
